@@ -44,6 +44,9 @@
       }
     }
   ],
+  "transform": [
+    {"filter": "datum.summer_gold > 0"}
+  ],
   "encoding": {
     "x": {
       "field": "summer_participations",
@@ -54,7 +57,9 @@
     "y": {
       "field": "summer_total",
       "type": "quantitative",
-      "scale": {"type": "linear", "domain": [1, 3000]}
+      "scale": {"type": "log", "domain": [1, 2800],
+        "base": 2
+      }
     }
   },
   "layer": [
@@ -64,11 +69,18 @@
         "size": {
           "field": "summer_gold",
           "type": "quantitative",
-          "legend": {"format": ".1s"}
+          "scale": {
+            "type": "threshold",
+            "domain": [5, 10, 20, 50, 100, 200, 300],
+            "range": [20, 40, 80, 200, 400, 600, 800, 1600]
+          }
         },
         "opacity": {"value": 0.6},
         "tooltip": [
-          {"field": "countries ", "type": "nominal"}
+          {"field": "country", "type": "nominal"},
+          {"field": "summer_participations", "type": "quantitative"},
+          {"field": "summer_total", "type": "quantitative"},
+          {"field": "summer_gold", "type": "quantitative"}
         ]
       }
     }
