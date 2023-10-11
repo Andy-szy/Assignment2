@@ -8,14 +8,14 @@
   },
   "params": [
     {
-      "name": "Population_Above",
+      "name": "minimum_gold",
       "value": 0,
       "bind": {
         "input": "range",
         "min": 0,
-        "max": 100000000,
-        "step": 1000000,
-        "name": "Minimum Population: "
+        "max": 300,
+        "step": 10,
+        "name": "Minimum Gold quantity: "
       }
     },
     {
@@ -29,7 +29,8 @@
           "Europe",
           "Africa",
           "Asia",
-          "Oceania"
+          "Oceania",
+          "No specific continent"
         ],
         "labels": [
           "Show All",
@@ -38,24 +39,40 @@
           "Europe",
           "Africa",
           "Asia",
-          "Oceania"
+          "Oceania",
+          "No specific continent"
         ],
         "name": "Continent Selection: "
       }
     }
   ],
   "transform": [
-    {"filter": "datum.summer_gold > 0"}
+    {
+      "calculate": "datum['summer_gold']", "as": "Gold"
+    },
+    {
+      "calculate": "datum['summer_participations']", "as": "Participation time"
+    },
+    {
+      "calculate": "datum['summer_total']", "as": "Medal tally"
+    },
+    {"filter": "datum.Gold > 0"},
+    {
+      "filter": "Continent_selection == null || datum.Continent == Continent_selection"
+    },
+    {
+      "filter": "datum.Gold > minimum_gold"
+    }
   ],
   "encoding": {
     "x": {
-      "field": "summer_participations",
+      "field": "Participation time",
       "type": "quantitative",
       "title": "Participations",
       "scale": {"type": "linear", "domain": [1, 30]}
     },
     "y": {
-      "field": "summer_total",
+      "field": "Medal tally",
       "type": "quantitative",
       "scale": {"type": "log", "domain": [1, 2800],
         "base": 2
@@ -67,7 +84,7 @@
       "mark": "circle",
       "encoding": {
         "size": {
-          "field": "summer_gold",
+          "field": "Gold",
           "type": "quantitative",
           "scale": {
             "type": "threshold",
@@ -75,15 +92,66 @@
             "range": [20, 40, 80, 200, 400, 600, 800, 1600]
           }
         },
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "North America",
+              "South America",
+              "Europe",
+              "Africa",
+              "Asia",
+              "Oceania",
+              "No specific continent"
+            ],
+            "range": [
+              "#e41a1c",
+              "#984ea3",
+              "#ff7f00",
+              "#a6cee3",
+              "#377eb8",
+              "#a65628",
+              "#123567"
+            ]
+          }
+        },
         "opacity": {"value": 0.6},
         "tooltip": [
-          {"field": "country", "type": "nominal"},
-          {"field": "summer_participations", "type": "quantitative"},
-          {"field": "summer_total", "type": "quantitative"},
-          {"field": "summer_gold", "type": "quantitative"},
-          {
-            "field": "continent",
-            "type": "nominal"
+          {"field": "Country", "type": "nominal"},
+          {"field": "Participation time", "type": "quantitative"},
+          {"field": "Medal tally", "type": "quantitative"},
+          {"field": "Gold", "type": "quantitative"},
+          {"field": "Continent", "type": "nominal"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Country", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' ||  datum['Country'] == 'United States'",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "Participation time", "type": "quantitative"},
+          {"field": "Medal tally", "type": "quantitative"},
+          {"field": "Gold", "type": "quantitative"},
+          {"field": "Continent", "type": "nominal"
           }
         ]
       }

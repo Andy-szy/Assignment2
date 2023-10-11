@@ -1,10 +1,10 @@
-country,continent,ioc_code,summer_participations,summer_gold,summer_silver,summer_bronze,summer_total,winter_participations,winter_gold,winter_silver,winter_bronze,winter_total,total_participation,total_gold,total_silver,total_bronze,total_total
+Country,Continent,ioc_code,summer_participations,summer_gold,summer_silver,summer_bronze,summer_total,winter_participations,winter_gold,winter_silver,winter_bronze,winter_total,total_participation,total_gold,total_silver,total_bronze,total_total
 Afghanistan,Asia,(AFG),15,0,0,2,2,0,0,0,0,0,15,0,0,2,2
 Algeria,Africa,(ALG),14,5,4,8,17,3,0,0,0,0,17,5,4,8,17
 Argentina,South America,(ARG),25,21,26,30,77,20,0,0,0,0,45,21,26,30,77
 Armenia,Europe,(ARM),7,2,8,8,18,8,0,0,0,0,15,2,8,8,18
-Australasia,Ocean Pacific,(ANZ),2,3,4,5,12,0,0,0,0,0,2,3,4,5,12
-Australia,Ocean Pacific,(AUS),27,164,173,210,547,20,6,7,6,19,47,170,180,216,566
+Australasia,Oceania,(ANZ),2,3,4,5,12,0,0,0,0,0,2,3,4,5,12
+Australia,Oceania,(AUS),27,164,173,210,547,20,6,7,6,19,47,170,180,216,566
 Austria,Europe,(AUT),28,20,35,41,96,24,71,88,91,250,52,91,123,132,346
 Azerbaijan,Europe,(AZE),7,7,14,28,49,7,0,0,0,0,14,7,14,28,49
 Bahamas,North America,(BAH),17,8,2,6,16,0,0,0,0,0,17,8,2,6,16
@@ -40,7 +40,7 @@ Egypt,Africa,(EGY),23,8,11,19,38,1,0,0,0,0,24,8,11,19,38
 Eritrea,Asia,(ERI),6,0,0,1,1,2,0,0,0,0,8,0,0,1,1
 Estonia,Europe,(EST),13,10,9,17,36,11,4,2,2,8,24,14,11,19,44
 Ethiopia,Africa,(ETH),14,23,12,23,58,2,0,0,0,0,16,23,12,23,58
-Fiji,Ocean Pacific,(FIJ),15,2,0,1,3,3,0,0,0,0,18,2,0,1,3
+Fiji,Oceania,(FIJ),15,2,0,1,3,3,0,0,0,0,18,2,0,1,3
 Finland,Europe,(FIN),26,101,85,119,305,24,45,65,65,175,50,146,150,184,480
 France,Europe,(FRA),29,223,251,277,751,24,41,42,55,138,53,264,293,332,889
 Gabon,Africa,(GAB),11,0,1,0,1,0,0,0,0,0,11,0,1,0,1
@@ -92,7 +92,7 @@ Mozambique,Africa,(MOZ),11,1,0,1,2,0,0,0,0,0,11,1,0,1,2
 Namibia,Africa,(NAM),8,0,5,0,5,0,0,0,0,0,8,0,5,0,5
 Netherlands,Europe,(NED),27,95,105,122,322,22,53,49,45,147,49,148,154,167,469
 Netherlands Antilles,Europe,(AHO),13,0,1,0,1,2,0,0,0,0,15,0,1,0,1
-New Zealand,Ocean Pacific,(NZL),24,53,33,51,137,17,2,2,2,6,41,55,35,53,143
+New Zealand,Oceania,(NZL),24,53,33,51,137,17,2,2,2,6,41,55,35,53,143
 Niger,Africa,(NIG),13,0,1,1,2,0,0,0,0,0,13,0,1,1,2
 Nigeria,Africa,(NGR),17,3,11,13,27,2,0,0,0,0,19,3,11,13,27
 North Macedonia,Europe,(MKD),7,0,1,1,2,7,0,0,0,0,14,0,1,1,2
@@ -110,12 +110,12 @@ Romania,Europe,(ROU),22,90,97,121,308,22,0,0,1,1,44,90,97,122,309
 Russia,Europe,(RUS),6,148,126,151,425,6,47,39,35,121,12,195,165,186,546
 Russian Empire,Europe,(RU1),3,1,4,3,8,0,0,0,0,0,3,1,4,3,8
 Soviet Union,Europe,(URS),9,395,319,296,"1,010",9,78,57,59,194,18,473,376,355,"1,204"
-Unified Team,No spcific continent,(EUN),1,45,38,29,112,1,9,6,8,23,2,54,44,37,135
+Unified Team,No specific continent,(EUN),1,45,38,29,112,1,9,6,8,23,2,54,44,37,135
 Olympic Athletes from Russia,Europe,(OAR),0,0,0,0,0,1,2,6,9,17,1,2,6,9,17
 ROC ,Europe,(ROC) ,1,20,28,23,71,1,6,12,14,32,2,26,40,37,103
 San Marino,Europe,(SMR),15,0,1,2,3,11,0,0,0,0,26,0,1,2,3
 Saudi Arabia,Asia,(KSA),12,0,2,2,4,1,0,0,0,0,13,0,2,2,4
-Samoa,Ocean Pacific,(SAM),10,0,1,0,1,0,0,0,0,0,10,0,1,0,1
+Samoa,Oceania,(SAM),10,0,1,0,1,0,0,0,0,0,10,0,1,0,1
 Senegal,Africa,(SEN),15,0,1,0,1,5,0,0,0,0,20,0,1,0,1
 Serbia,Europe,(SRB),5,6,7,11,24,4,0,0,0,0,9,6,7,11,24
 Serbia and Montenegro,Europe,(SCG),3,2,4,3,9,3,0,0,0,0,6,2,4,3,9
@@ -135,7 +135,7 @@ Tajikistan,Asia,(TJK),7,1,1,2,4,4,0,0,0,0,11,1,1,2,4
 Tanzania,Africa,(TAN),14,0,2,0,2,0,0,0,0,0,14,0,2,0,2
 Thailand,Asia,(THA),17,10,8,17,35,5,0,0,0,0,22,10,8,17,35
 Togo,Africa,(TOG),11,0,0,1,1,2,0,0,0,0,13,0,0,1,1
-Tonga,Ocean Pacific,(TGA),10,0,1,0,1,2,0,0,0,0,12,0,1,0,1
+Tonga,Oceania,(TGA),10,0,1,0,1,2,0,0,0,0,12,0,1,0,1
 Trinidad and Tobago,North America,(TTO),18,3,5,11,19,4,0,0,0,0,22,3,5,11,19
 Tunisia,Africa,(TUN),15,5,3,7,15,0,0,0,0,0,15,5,3,7,15
 Turkey,Asia,(TUR),23,41,26,37,104,18,0,0,0,0,41,41,26,37,104
@@ -152,6 +152,6 @@ Virgin Islands,North America,(ISV),13,0,1,0,1,8,0,0,0,0,21,0,1,0,1
 Yugoslavia,Europe,(YUG),16,26,29,28,83,14,0,3,1,4,30,26,32,29,87
 Zambia,Africa,(ZAM),14,0,1,1,2,0,0,0,0,0,14,0,1,1,2
 Zimbabwe,Africa,(ZIM),14,3,4,1,8,1,0,0,0,0,15,3,4,1,8
-Independent Olympic Athletes,No spcific continent,(IOA),3,1,0,1,2,0,0,0,0,0,3,1,0,1,2
-Independent Olympic Participants ,No spcific continent,(IOP),1,0,1,2,3,0,0,0,0,0,1,0,1,2,3
-Mixed Team ,No spcific continent,(ZZX),3,11,6,8,25,0,0,0,0,0,3,11,6,8,25
+Independent Olympic Athletes,No specific continent,(IOA),3,1,0,1,2,0,0,0,0,0,3,1,0,1,2
+Independent Olympic Participants ,No specific continent,(IOP),1,0,1,2,3,0,0,0,0,0,1,0,1,2,3
+Mixed Team ,No specific continent,(ZZX),3,11,6,8,25,0,0,0,0,0,3,11,6,8,25
