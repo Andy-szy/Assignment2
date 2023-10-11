@@ -1,4 +1,4 @@
-countries ,ioc_code ,summer_participations,summer_gold,summer_silver,summer_bronze,summer_total,winter_participations,winter_gold,winter_silver,winter_bronze,winter_total,total_participation,total_gold,total_silver,total_bronze,total_total 
+countries,ioc_code,summer_participations,summer_gold,summer_silver,summer_bronze,summer_total,winter_participations,winter_gold,winter_silver,winter_bronze,winter_total,total_participation,total_gold,total_silver,total_bronze,total_total
 Afghanistan,(AFG),15,0,0,2,2,0,0,0,0,0,15,0,0,2,2
 Algeria,(ALG),14,5,4,8,17,3,0,0,0,0,17,5,4,8,17
 Argentina,(ARG),25,21,26,30,77,20,0,0,0,0,45,21,26,30,77
@@ -143,7 +143,7 @@ Turkmenistan,(TKM),7,0,1,0,1,0,0,0,0,0,7,0,1,0,1
 Uganda,(UGA),16,4,4,3,11,0,0,0,0,0,16,4,4,3,11
 Ukraine,(UKR),7,35,36,68,139,8,3,2,4,9,15,38,38,72,148
 United Arab Emirates,(UAE),10,1,0,1,2,0,0,0,0,0,10,1,0,1,2
-United States,(USA),28,"1,060",831,738,"2,629",24,113,122,95,330,52,"1,173",953,833,"2,959"
+United States,(USA),28,1060,831,738,2629,24,113,122,95,330,52,"1,173",953,833,"2,959"
 Uruguay,(URU),22,2,2,6,10,1,0,0,0,0,23,2,2,6,10
 Uzbekistan,(UZB),7,10,6,20,36,8,1,0,0,1,15,11,6,20,37
 Venezuela,(VEN),19,3,7,9,19,4,0,0,0,0,23,3,7,9,19

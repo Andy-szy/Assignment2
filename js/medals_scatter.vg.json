@@ -4,21 +4,57 @@
   "height": 600,
   "title": "Countries VS Medals VS Golds",
   "data": {
-    "url": "data/medals_scatter.vg.json"
+    "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/countries_medals.csv"
   },
+  "params": [
+    {
+      "name": "Population_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 100000000,
+        "step": 1000000,
+        "name": "Minimum Population: "
+      }
+    },
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "labels": [
+          "Show All",
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "name": "Continent Selection: "
+      }
+    }
+  ],
   "encoding": {
     "x": {
       "field": "summer_participations",
       "type": "quantitative",
       "title": "Participations",
-      "axis": {"tickCount": 1},
       "scale": {"type": "linear", "domain": [1, 30]}
     },
     "y": {
       "field": "summer_total",
       "type": "quantitative",
-      "axis": {"tickCount": 1},
-      "scale": {"type": "linear", "domain": [1, 2500]}
+      "scale": {"type": "linear", "domain": [1, 3000]}
     }
   },
   "layer": [
@@ -28,16 +64,11 @@
         "size": {
           "field": "summer_gold",
           "type": "quantitative",
-          "scale": {
-            "type": "threshold",
-            "domain": [5, 10, 15, 20, 25],
-            "range": [10, 50, 150, 200, 300, 400]
-          },
           "legend": {"format": ".1s"}
         },
         "opacity": {"value": 0.6},
         "tooltip": [
-          {"field": "countries", "type": "nominal"}
+          {"field": "countries ", "type": "nominal"}
         ]
       }
     }
