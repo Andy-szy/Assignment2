@@ -1,0 +1,24 @@
+City,Country,Year,Continent,Times,Latitude,Longitude
+St. Louis,United States,1904,North America,1,38.6,-90.2
+Stockholm,Sweden,1912,Europe,1,59.3,18.1
+Antwerp,Belgium,1920,Europe,1,51.2,4.4
+Amsterdam,Netherlands,1928,Europe,1,52.4,4.9
+Berlin,Germany,1936,Europe,1,52.5,13.4
+Helsinki,Finland,1952,Europe,1,60.2,24.9
+Melbourne,Australia,1956,Europe Oceania,1,-37.8,145
+Rome,Italy,1960,Europe,1,41.9,12.5
+Mexico City,Mexico,1968,North America,1,19.4,-99.1
+Munich,Germany,1972,Europe,1,48.1,11.6
+Montreal,Canada,1976,North America,1,45.5,-73.6
+Moscow,Russia,1980,Europe,1,55.8,37.6
+Seoul,South Korea,1988,Asia,1,37.6,127
+Barcelona,Spain,1992,Europe,1,41.4,2.2
+Atlanta,United States,1996,North America,1,33.7,-84.4
+Sydney,Australia,2000,Oceania,1,-33.9,151.2
+Beijing,China,2008,Asia,1,39.9,116.4
+Rio de Janeiro,Brazil,2016,South America,1,-22.9,-43.2
+Athens,Greece,"1896, 2004",Europe,2,38,23.7
+Paris,France,"1900, 1924, 2024",Europe,3,48.9,2.4
+London,United Kingdom,"1908, 1948, 2012",Europe,3,51.5,0
+Los Angeles,United States,"1932, 1984, 2028",North America,3,34.1,-118.2
+Tokyo,Japan,"1964, 2020",Asia,2,35.7,139.7
