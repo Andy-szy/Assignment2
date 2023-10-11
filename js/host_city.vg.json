@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 1000,
+  "height": 750,
+  "title": "Summer Olympics games host city",
+  "data": {"url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/host_cities.csv"},
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Andy-szy/FIT3179-Homework2/main/data/map.topojson.txt",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightslategray", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Andy-szy/FIT3179-Homework2/main/data/ocean.txt",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightblue"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Andy-szy/FIT3179-Homework2/main/data/graticules.txt",
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+      },
+      "mark": {"type": "geoshape", "fill": null, "stroke": "dimgrey"}
+    },
+    {
+      "encoding": {
+      "longitude": {"field": "Longitude", "type": "quantitative"},
+      "latitude": {"field": "Latitude", "type": "quantitative"},
+      "color": {
+        "field": "Times",
+        "type": "nominal",
+        "scale": {
+          "domain": [1, 2, 3],
+          "range": ["yellow", "orange", "orangered"]
+        }
+      },
+      "tooltip": [
+        {"field": "City", "type": "nominal"},
+        {"field": "Country", "type": "nominal"},
+        {"field": "Times", "type": "quantitative"},
+        {"field": "Latitude", "type": "quantitative"},
+        {"field": "Year", "type": "nominal"}
+      ]
+    },
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "tooltip": {
+              "content": "data"
+            },
+            "size": 100,
+            "opacity": 1
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.Times > 1"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "middle",
+            "dx": -8,
+            "dy": 5,
+            "fontSize": 9,
+            "fontStyle": "italic"
+          },
+          "encoding": {
+            "text": {"field": "Year", "type": "nominal"},
+            "color": {"value": "black"},
+            "tooltip": [
+              {"field": "City", "type": "nominal"},
+              {"field": "Country", "type": "nominal"},
+              {"field": "Times", "type": "quantitative"},
+              {"field": "Latitude", "type": "quantitative"},
+              {"field": "Year", "type": "nominal"}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
