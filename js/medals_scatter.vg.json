@@ -80,7 +80,11 @@
           {"field": "country", "type": "nominal"},
           {"field": "summer_participations", "type": "quantitative"},
           {"field": "summer_total", "type": "quantitative"},
-          {"field": "summer_gold", "type": "quantitative"}
+          {"field": "summer_gold", "type": "quantitative"},
+          {
+            "field": "continent",
+            "type": "nominal"
+          }
         ]
       }
     }
