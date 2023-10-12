@@ -5,6 +5,7 @@
   },
   "vconcat": [
     {
+      "title": "Relationship of number of medals and weights",
       "width": 800,
       "height": 300,
       "transform": [
@@ -40,6 +41,7 @@
       }
     },
     {
+      "title": "Relationship of number of medals and height",
       "width": 800,
       "height": 300,
       "transform": [
