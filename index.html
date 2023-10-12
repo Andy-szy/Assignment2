@@ -12,6 +12,7 @@
 
 <div id="scatter_plot"></div>
 <div id="map"></div>
+<div id="map2"></div>
 
 <script type="text/javascript">
   var spec1 = "js/medals_scatter.vg.json";
@@ -20,6 +21,10 @@
 
   var spec2 = "js/host_city.vg.json";
   vegaEmbed('#map', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec3 = "js/medal_map.vg.json";
+  vegaEmbed('#map2', spec3).then(function(result) {
   }).catch(console.error);
 </script>
 

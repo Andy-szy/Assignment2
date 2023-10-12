@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/medal_owner.csv"
+  },
+  "vconcat": [
+    {
+      "width": 800,
+      "height": 300,
+      "transform": [
+      ],
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "field": "Weight",
+          "type": "quantitative",
+          "axis": {"title": "Weight(kg)", "grid": false},
+          "scale": {
+            "type": "linear"
+          }
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "Number of Medals",
+          "scale": {
+            "type": "linear",
+            "domain": [0, 350]
+          }
+        },
+        "color": {
+          "field": "Medal",
+          "scale": {
+            "range": ["saddlebrown", "gold", "gray"]
+          }
+        },
+        "tooltip": [
+          {"field": "Medal", "type": "nominal"},
+          {"field": "Weight", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "width": 800,
+      "height": 300,
+      "transform": [
+      ],
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "field": "Height",
+          "type": "quantitative",
+          "axis": {"title": "Height(cm)", "grid": false},
+          "scale": {
+            "type": "linear",
+            "domain": [135, 225]
+          }
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "Number of Medals",
+          "scale": {
+            "type": "linear",
+            "domain": [0, 500]
+          }
+        },
+        "color": {
+          "field": "Medal",
+          "scale": {
+            "range": ["saddlebrown", "gold", "gray"]
+          }
+        },
+        "tooltip": [
+          {"field": "Medal", "type": "nominal"},
+          {"field": "Height", "type": "quantitative"}
+        ]
+      }
+    }
+  ],
+  "config": {"title": {"font": "sans-serif", "fontSize": 14}}
+}
