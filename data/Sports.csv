@@ -1,33 +1,641 @@
-﻿Sports,1948,1952,1956,1960,1964,1968,1972,1976,1980,1984,1988,1992,1996,2000,2004,2008,2012,2016,2020,2024
-Aquatics,16,16,18,20,23,34,34,31,31,36,38,38,38,44,44,46,46,46,49,49
-Basketball,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,4,4
-Canoeing,9,9,9,7,7,7,11,11,11,12,12,16,16,16,16,16,16,16,16,16
-Cycling,6,6,6,6,7,7,7,6,6,8,9,10,14,18,18,18,18,18,22,22
-Gymnastics,9,15,15,14,14,14,14,14,14,15,15,15,16,18,18,18,18,18,18,18
-Vollyball,0,0,0,0,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4
-Equestrian,6,6,4,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
-Wrestling,16,16,16,16,16,16,20,20,20,20,20,20,20,16,18,18,18,18,18,18
-Archery,0,0,0,0,0,0,2,2,2,2,4,4,4,4,4,4,4,4,5,5
-Athletics,33,33,33,34,36,36,38,37,38,41,42,43,44,46,46,47,47,47,48,48
-Badminton,0,0,0,0,0,0,0,0,0,0,0,4,5,5,5,5,5,5,5,5
-Boxing,8,10,10,10,10,11,11,11,11,12,12,12,12,12,11,11,13,13,13,13
-Breaking,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-Fencing,7,7,7,8,8,8,8,8,8,8,8,8,10,10,10,10,10,10,12,12
-Field hockey,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2
-Football,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2
-Golf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2
-Handball,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2,2,2,2
-Judo,0,0,0,0,4,0,6,6,8,8,7,14,14,14,14,14,14,14,15,15
-Modern Pentathlon,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2
-Rowing,7,7,7,7,7,7,7,14,14,14,14,14,14,14,14,14,14,14,14,14
-Rugby Sevens,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2
-Sailing,5,5,5,5,5,5,6,6,6,7,8,10,10,11,11,11,10,10,10,10
-Shooting,4,7,7,6,6,7,8,7,7,11,13,13,15,17,17,15,15,15,15,15
-Skateboarding,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4
-Sport Climbing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,4
-Surfing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2
-Table Tennis,0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,5,5
-Taekwondo,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8
-Tennis,0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,4,5,5,5,5
-Triathlon,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,3,3
-Weightlifting,6,7,7,7,7,7,9,9,10,10,10,10,10,15,15,15,15,15,14,10
+Sports,Year,Number
+Aquatics,1948,16
+Basketball,1948,1
+Canoeing,1948,9
+Cycling,1948,6
+Gymnastics,1948,9
+Vollyball,1948,0
+Equestrian,1948,6
+Wrestling,1948,16
+Archery,1948,0
+Athletics,1948,33
+Badminton,1948,0
+Boxing,1948,8
+Breaking,1948,0
+Fencing,1948,7
+Field hockey,1948,1
+Football,1948,1
+Golf,1948,0
+Handball,1948,0
+Judo,1948,0
+Modern Pentathlon,1948,1
+Rowing,1948,7
+Rugby Sevens,1948,0
+Sailing,1948,5
+Shooting,1948,4
+Skateboarding,1948,0
+Sport Climbing,1948,0
+Surfing,1948,0
+Table Tennis,1948,0
+Taekwondo,1948,0
+Tennis,1948,0
+Triathlon,1948,0
+Weightlifting,1948,6
+Aquatics,1952,16
+Basketball,1952,1
+Canoeing,1952,9
+Cycling,1952,6
+Gymnastics,1952,15
+Vollyball,1952,0
+Equestrian,1952,6
+Wrestling,1952,16
+Archery,1952,0
+Athletics,1952,33
+Badminton,1952,0
+Boxing,1952,10
+Breaking,1952,0
+Fencing,1952,7
+Field hockey,1952,1
+Football,1952,1
+Golf,1952,0
+Handball,1952,0
+Judo,1952,0
+Modern Pentathlon,1952,2
+Rowing,1952,7
+Rugby Sevens,1952,0
+Sailing,1952,5
+Shooting,1952,7
+Skateboarding,1952,0
+Sport Climbing,1952,0
+Surfing,1952,0
+Table Tennis,1952,0
+Taekwondo,1952,0
+Tennis,1952,0
+Triathlon,1952,0
+Weightlifting,1952,7
+Aquatics,1956,18
+Basketball,1956,1
+Canoeing,1956,9
+Cycling,1956,6
+Gymnastics,1956,15
+Vollyball,1956,0
+Equestrian,1956,4
+Wrestling,1956,16
+Archery,1956,0
+Athletics,1956,33
+Badminton,1956,0
+Boxing,1956,10
+Breaking,1956,0
+Fencing,1956,7
+Field hockey,1956,1
+Football,1956,1
+Golf,1956,0
+Handball,1956,0
+Judo,1956,0
+Modern Pentathlon,1956,2
+Rowing,1956,7
+Rugby Sevens,1956,0
+Sailing,1956,5
+Shooting,1956,7
+Skateboarding,1956,0
+Sport Climbing,1956,0
+Surfing,1956,0
+Table Tennis,1956,0
+Taekwondo,1956,0
+Tennis,1956,0
+Triathlon,1956,0
+Weightlifting,1956,7
+Aquatics,1960,20
+Basketball,1960,1
+Canoeing,1960,7
+Cycling,1960,6
+Gymnastics,1960,14
+Vollyball,1960,0
+Equestrian,1960,5
+Wrestling,1960,16
+Archery,1960,0
+Athletics,1960,34
+Badminton,1960,0
+Boxing,1960,10
+Breaking,1960,0
+Fencing,1960,8
+Field hockey,1960,1
+Football,1960,1
+Golf,1960,0
+Handball,1960,0
+Judo,1960,0
+Modern Pentathlon,1960,2
+Rowing,1960,7
+Rugby Sevens,1960,0
+Sailing,1960,5
+Shooting,1960,6
+Skateboarding,1960,0
+Sport Climbing,1960,0
+Surfing,1960,0
+Table Tennis,1960,0
+Taekwondo,1960,0
+Tennis,1960,0
+Triathlon,1960,0
+Weightlifting,1960,7
+Aquatics,1964,23
+Basketball,1964,1
+Canoeing,1964,7
+Cycling,1964,7
+Gymnastics,1964,14
+Vollyball,1964,2
+Equestrian,1964,6
+Wrestling,1964,16
+Archery,1964,0
+Athletics,1964,36
+Badminton,1964,0
+Boxing,1964,10
+Breaking,1964,0
+Fencing,1964,8
+Field hockey,1964,1
+Football,1964,1
+Golf,1964,0
+Handball,1964,0
+Judo,1964,4
+Modern Pentathlon,1964,2
+Rowing,1964,7
+Rugby Sevens,1964,0
+Sailing,1964,5
+Shooting,1964,6
+Skateboarding,1964,0
+Sport Climbing,1964,0
+Surfing,1964,0
+Table Tennis,1964,0
+Taekwondo,1964,0
+Tennis,1964,0
+Triathlon,1964,0
+Weightlifting,1964,7
+Aquatics,1968,34
+Basketball,1968,1
+Canoeing,1968,7
+Cycling,1968,7
+Gymnastics,1968,14
+Vollyball,1968,2
+Equestrian,1968,6
+Wrestling,1968,16
+Archery,1968,0
+Athletics,1968,36
+Badminton,1968,0
+Boxing,1968,11
+Breaking,1968,0
+Fencing,1968,8
+Field hockey,1968,1
+Football,1968,1
+Golf,1968,0
+Handball,1968,0
+Judo,1968,0
+Modern Pentathlon,1968,2
+Rowing,1968,7
+Rugby Sevens,1968,0
+Sailing,1968,5
+Shooting,1968,7
+Skateboarding,1968,0
+Sport Climbing,1968,0
+Surfing,1968,0
+Table Tennis,1968,0
+Taekwondo,1968,0
+Tennis,1968,0
+Triathlon,1968,0
+Weightlifting,1968,7
+Aquatics,1972,34
+Basketball,1972,1
+Canoeing,1972,11
+Cycling,1972,7
+Gymnastics,1972,14
+Vollyball,1972,2
+Equestrian,1972,6
+Wrestling,1972,20
+Archery,1972,2
+Athletics,1972,38
+Badminton,1972,0
+Boxing,1972,11
+Breaking,1972,0
+Fencing,1972,8
+Field hockey,1972,1
+Football,1972,1
+Golf,1972,0
+Handball,1972,1
+Judo,1972,6
+Modern Pentathlon,1972,2
+Rowing,1972,7
+Rugby Sevens,1972,0
+Sailing,1972,6
+Shooting,1972,8
+Skateboarding,1972,0
+Sport Climbing,1972,0
+Surfing,1972,0
+Table Tennis,1972,0
+Taekwondo,1972,0
+Tennis,1972,0
+Triathlon,1972,0
+Weightlifting,1972,9
+Aquatics,1976,31
+Basketball,1976,2
+Canoeing,1976,11
+Cycling,1976,6
+Gymnastics,1976,14
+Vollyball,1976,2
+Equestrian,1976,6
+Wrestling,1976,20
+Archery,1976,2
+Athletics,1976,37
+Badminton,1976,0
+Boxing,1976,11
+Breaking,1976,0
+Fencing,1976,8
+Field hockey,1976,1
+Football,1976,1
+Golf,1976,0
+Handball,1976,2
+Judo,1976,6
+Modern Pentathlon,1976,2
+Rowing,1976,14
+Rugby Sevens,1976,0
+Sailing,1976,6
+Shooting,1976,7
+Skateboarding,1976,0
+Sport Climbing,1976,0
+Surfing,1976,0
+Table Tennis,1976,0
+Taekwondo,1976,0
+Tennis,1976,0
+Triathlon,1976,0
+Weightlifting,1976,9
+Aquatics,1980,31
+Basketball,1980,2
+Canoeing,1980,11
+Cycling,1980,6
+Gymnastics,1980,14
+Vollyball,1980,2
+Equestrian,1980,6
+Wrestling,1980,20
+Archery,1980,2
+Athletics,1980,38
+Badminton,1980,0
+Boxing,1980,11
+Breaking,1980,0
+Fencing,1980,8
+Field hockey,1980,2
+Football,1980,1
+Golf,1980,0
+Handball,1980,2
+Judo,1980,8
+Modern Pentathlon,1980,2
+Rowing,1980,14
+Rugby Sevens,1980,0
+Sailing,1980,6
+Shooting,1980,7
+Skateboarding,1980,0
+Sport Climbing,1980,0
+Surfing,1980,0
+Table Tennis,1980,0
+Taekwondo,1980,0
+Tennis,1980,0
+Triathlon,1980,0
+Weightlifting,1980,10
+Aquatics,1984,36
+Basketball,1984,2
+Canoeing,1984,12
+Cycling,1984,8
+Gymnastics,1984,15
+Vollyball,1984,2
+Equestrian,1984,6
+Wrestling,1984,20
+Archery,1984,2
+Athletics,1984,41
+Badminton,1984,0
+Boxing,1984,12
+Breaking,1984,0
+Fencing,1984,8
+Field hockey,1984,2
+Football,1984,1
+Golf,1984,0
+Handball,1984,2
+Judo,1984,8
+Modern Pentathlon,1984,2
+Rowing,1984,14
+Rugby Sevens,1984,0
+Sailing,1984,7
+Shooting,1984,11
+Skateboarding,1984,0
+Sport Climbing,1984,0
+Surfing,1984,0
+Table Tennis,1984,0
+Taekwondo,1984,0
+Tennis,1984,0
+Triathlon,1984,0
+Weightlifting,1984,10
+Aquatics,1988,38
+Basketball,1988,2
+Canoeing,1988,12
+Cycling,1988,9
+Gymnastics,1988,15
+Vollyball,1988,2
+Equestrian,1988,6
+Wrestling,1988,20
+Archery,1988,4
+Athletics,1988,42
+Badminton,1988,0
+Boxing,1988,12
+Breaking,1988,0
+Fencing,1988,8
+Field hockey,1988,2
+Football,1988,1
+Golf,1988,0
+Handball,1988,2
+Judo,1988,7
+Modern Pentathlon,1988,2
+Rowing,1988,14
+Rugby Sevens,1988,0
+Sailing,1988,8
+Shooting,1988,13
+Skateboarding,1988,0
+Sport Climbing,1988,0
+Surfing,1988,0
+Table Tennis,1988,4
+Taekwondo,1988,0
+Tennis,1988,4
+Triathlon,1988,0
+Weightlifting,1988,10
+Aquatics,1992,38
+Basketball,1992,2
+Canoeing,1992,16
+Cycling,1992,10
+Gymnastics,1992,15
+Vollyball,1992,2
+Equestrian,1992,6
+Wrestling,1992,20
+Archery,1992,4
+Athletics,1992,43
+Badminton,1992,4
+Boxing,1992,12
+Breaking,1992,0
+Fencing,1992,8
+Field hockey,1992,2
+Football,1992,1
+Golf,1992,0
+Handball,1992,2
+Judo,1992,14
+Modern Pentathlon,1992,2
+Rowing,1992,14
+Rugby Sevens,1992,0
+Sailing,1992,10
+Shooting,1992,13
+Skateboarding,1992,0
+Sport Climbing,1992,0
+Surfing,1992,0
+Table Tennis,1992,4
+Taekwondo,1992,0
+Tennis,1992,4
+Triathlon,1992,0
+Weightlifting,1992,10
+Aquatics,1996,38
+Basketball,1996,2
+Canoeing,1996,16
+Cycling,1996,14
+Gymnastics,1996,16
+Vollyball,1996,4
+Equestrian,1996,6
+Wrestling,1996,20
+Archery,1996,4
+Athletics,1996,44
+Badminton,1996,5
+Boxing,1996,12
+Breaking,1996,0
+Fencing,1996,10
+Field hockey,1996,2
+Football,1996,2
+Golf,1996,0
+Handball,1996,2
+Judo,1996,14
+Modern Pentathlon,1996,1
+Rowing,1996,14
+Rugby Sevens,1996,0
+Sailing,1996,10
+Shooting,1996,15
+Skateboarding,1996,0
+Sport Climbing,1996,0
+Surfing,1996,0
+Table Tennis,1996,4
+Taekwondo,1996,0
+Tennis,1996,4
+Triathlon,1996,0
+Weightlifting,1996,10
+Aquatics,2000,44
+Basketball,2000,2
+Canoeing,2000,16
+Cycling,2000,18
+Gymnastics,2000,18
+Vollyball,2000,4
+Equestrian,2000,6
+Wrestling,2000,16
+Archery,2000,4
+Athletics,2000,46
+Badminton,2000,5
+Boxing,2000,12
+Breaking,2000,0
+Fencing,2000,10
+Field hockey,2000,2
+Football,2000,2
+Golf,2000,0
+Handball,2000,2
+Judo,2000,14
+Modern Pentathlon,2000,2
+Rowing,2000,14
+Rugby Sevens,2000,0
+Sailing,2000,11
+Shooting,2000,17
+Skateboarding,2000,0
+Sport Climbing,2000,0
+Surfing,2000,0
+Table Tennis,2000,4
+Taekwondo,2000,8
+Tennis,2000,4
+Triathlon,2000,2
+Weightlifting,2000,15
+Aquatics,2004,44
+Basketball,2004,2
+Canoeing,2004,16
+Cycling,2004,18
+Gymnastics,2004,18
+Vollyball,2004,4
+Equestrian,2004,6
+Wrestling,2004,18
+Archery,2004,4
+Athletics,2004,46
+Badminton,2004,5
+Boxing,2004,11
+Breaking,2004,0
+Fencing,2004,10
+Field hockey,2004,2
+Football,2004,2
+Golf,2004,0
+Handball,2004,2
+Judo,2004,14
+Modern Pentathlon,2004,2
+Rowing,2004,14
+Rugby Sevens,2004,0
+Sailing,2004,11
+Shooting,2004,17
+Skateboarding,2004,0
+Sport Climbing,2004,0
+Surfing,2004,0
+Table Tennis,2004,4
+Taekwondo,2004,8
+Tennis,2004,4
+Triathlon,2004,2
+Weightlifting,2004,15
+Aquatics,2008,46
+Basketball,2008,2
+Canoeing,2008,16
+Cycling,2008,18
+Gymnastics,2008,18
+Vollyball,2008,4
+Equestrian,2008,6
+Wrestling,2008,18
+Archery,2008,4
+Athletics,2008,47
+Badminton,2008,5
+Boxing,2008,11
+Breaking,2008,0
+Fencing,2008,10
+Field hockey,2008,2
+Football,2008,2
+Golf,2008,0
+Handball,2008,2
+Judo,2008,14
+Modern Pentathlon,2008,2
+Rowing,2008,14
+Rugby Sevens,2008,0
+Sailing,2008,11
+Shooting,2008,15
+Skateboarding,2008,0
+Sport Climbing,2008,0
+Surfing,2008,0
+Table Tennis,2008,4
+Taekwondo,2008,8
+Tennis,2008,4
+Triathlon,2008,2
+Weightlifting,2008,15
+Aquatics,2012,46
+Basketball,2012,2
+Canoeing,2012,16
+Cycling,2012,18
+Gymnastics,2012,18
+Vollyball,2012,4
+Equestrian,2012,6
+Wrestling,2012,18
+Archery,2012,4
+Athletics,2012,47
+Badminton,2012,5
+Boxing,2012,13
+Breaking,2012,0
+Fencing,2012,10
+Field hockey,2012,2
+Football,2012,2
+Golf,2012,0
+Handball,2012,2
+Judo,2012,14
+Modern Pentathlon,2012,2
+Rowing,2012,14
+Rugby Sevens,2012,0
+Sailing,2012,10
+Shooting,2012,15
+Skateboarding,2012,0
+Sport Climbing,2012,0
+Surfing,2012,0
+Table Tennis,2012,4
+Taekwondo,2012,8
+Tennis,2012,5
+Triathlon,2012,2
+Weightlifting,2012,15
+Aquatics,2016,46
+Basketball,2016,2
+Canoeing,2016,16
+Cycling,2016,18
+Gymnastics,2016,18
+Vollyball,2016,4
+Equestrian,2016,6
+Wrestling,2016,18
+Archery,2016,4
+Athletics,2016,47
+Badminton,2016,5
+Boxing,2016,13
+Breaking,2016,0
+Fencing,2016,10
+Field hockey,2016,2
+Football,2016,2
+Golf,2016,2
+Handball,2016,2
+Judo,2016,14
+Modern Pentathlon,2016,2
+Rowing,2016,14
+Rugby Sevens,2016,2
+Sailing,2016,10
+Shooting,2016,15
+Skateboarding,2016,0
+Sport Climbing,2016,0
+Surfing,2016,0
+Table Tennis,2016,4
+Taekwondo,2016,8
+Tennis,2016,5
+Triathlon,2016,2
+Weightlifting,2016,15
+Aquatics,2020,49
+Basketball,2020,4
+Canoeing,2020,16
+Cycling,2020,22
+Gymnastics,2020,18
+Vollyball,2020,4
+Equestrian,2020,6
+Wrestling,2020,18
+Archery,2020,5
+Athletics,2020,48
+Badminton,2020,5
+Boxing,2020,13
+Breaking,2020,0
+Fencing,2020,12
+Field hockey,2020,2
+Football,2020,2
+Golf,2020,2
+Handball,2020,2
+Judo,2020,15
+Modern Pentathlon,2020,2
+Rowing,2020,14
+Rugby Sevens,2020,2
+Sailing,2020,10
+Shooting,2020,15
+Skateboarding,2020,4
+Sport Climbing,2020,2
+Surfing,2020,2
+Table Tennis,2020,5
+Taekwondo,2020,8
+Tennis,2020,5
+Triathlon,2020,3
+Weightlifting,2020,14
+Aquatics,2024,49
+Basketball,2024,4
+Canoeing,2024,16
+Cycling,2024,22
+Gymnastics,2024,18
+Vollyball,2024,4
+Equestrian,2024,6
+Wrestling,2024,18
+Archery,2024,5
+Athletics,2024,48
+Badminton,2024,5
+Boxing,2024,13
+Breaking,2024,2
+Fencing,2024,12
+Field hockey,2024,2
+Football,2024,2
+Golf,2024,2
+Handball,2024,2
+Judo,2024,15
+Modern Pentathlon,2024,2
+Rowing,2024,14
+Rugby Sevens,2024,2
+Sailing,2024,10
+Shooting,2024,15
+Skateboarding,2024,4
+Sport Climbing,2024,4
+Surfing,2024,2
+Table Tennis,2024,5
+Taekwondo,2024,8
+Tennis,2024,5
+Triathlon,2024,3
+Weightlifting,2024,10
