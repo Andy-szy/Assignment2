@@ -14,6 +14,7 @@
     <div id="scatter_plot"></div>
     <div id="map"></div>
     <div id="map2"></div>
+    <div id="stack_bar"></div>
 </div>
 
 <script type="text/javascript">
@@ -27,6 +28,10 @@
 
   var spec3 = "js/medal_map.vg.json";
   vegaEmbed('#map2', spec3).then(function(result) {
+  }).catch(console.error);
+
+  var spec4 = "js/height_weight.vg.json";
+  vegaEmbed('#stack_bar', spec4).then(function(result) {
   }).catch(console.error);
 </script>
 

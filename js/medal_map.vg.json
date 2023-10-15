@@ -1,122 +1,87 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {
-    "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/medal_owner.csv"
-  },
-  "vconcat": [
+  "width": 800,
+  "height": 600,
+  "title": "Medals distribution",
+  "params": [
     {
-      "width": 800,
-      "height": 600,
-      "title": "Medals distribution",
-      "projection": {"type": "equalEarth", "rotate": [-150, 0, 0]},
-      "layer": [
-        {
-          "data": {
-            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
-            "format": {
-              "type": "topojson",
-              "feature": "ne_110m_admin_0_countries"
-            }
-          },
-          "transform": [
-            {
-              "lookup": "properties.NAME",
-              "from": {
-                "data": {
-                  "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/medal_counts.csv"
-                },
-                "key": "Team",
-                "fields": ["Gold"]
-              }
-            }
-          ],
-          "mark": {"type": "geoshape"},
-          "encoding": {
-            "color": {
-              "field": "Gold",
-              "type": "quantitative"
-            },
-            "tooltip": [
-              {
-                "field": "properties.NAME",
-                "type": "nominal",
-                "title": "Country"
-              }
-            ]
-          }
-        },
-        {
-          "data": {
-            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
-            "format": {"type": "topojson", "feature": "oceans"}
-          },
-          "mark": {"type": "geoshape", "fill": "skyblue"}
-        },
-        {
-          "data": {
-            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
-            "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
-          },
-          "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
-        }
-      ]
-    },
-    {
-      "title": "Relationship of number of medals and weights",
-      "width": 800,
-      "height": 300,
-      "transform": [],
-      "mark": "area",
-      "encoding": {
-        "x": {
-          "field": "Weight",
-          "type": "quantitative",
-          "axis": {"title": "Weight(kg)", "grid": false},
-          "scale": {"type": "linear"}
-        },
-        "y": {
-          "aggregate": "count",
-          "title": "Number of Medals",
-          "scale": {"type": "linear", "domain": [0, 350]}
-        },
-        "color": {
-          "field": "Medal",
-          "scale": {"range": ["saddlebrown", "gold", "gray"]}
-        },
-        "tooltip": [
-          {"field": "Medal", "type": "nominal"},
-          {"field": "Weight", "type": "quantitative"}
-        ]
-      }
-    },
-    {
-      "title": "Relationship of number of medals and height",
-      "width": 800,
-      "height": 300,
-      "transform": [],
-      "mark": "area",
-      "encoding": {
-        "x": {
-          "field": "Height",
-          "type": "quantitative",
-          "axis": {"title": "Height(cm)", "grid": false},
-          "scale": {"type": "linear", "domain": [135, 225]}
-        },
-        "y": {
-          "aggregate": "count",
-          "title": "Number of Medals",
-          "scale": {"type": "linear", "domain": [0, 500]}
-        },
-        "color": {
-          "field": "Medal",
-          "scale": {"range": ["saddlebrown", "gold", "gray"]}
-        },
-        "tooltip": [
-          {"field": "Medal", "type": "nominal"},
-          {"field": "Height", "type": "quantitative"}
-        ]
+      "name": "Year_selection",
+      "value": 1976,
+      "bind": {
+        "input": "range",
+        "min": 1976,
+        "max": 2008,
+        "step": 4,
+        "name": "Year:  "
       }
     }
   ],
-  "config": {"title": {"font": "sans-serif", "fontSize": 14}}
+  "projection": {"type": "equalEarth", "rotate": [-150, 0, 0]},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "transform": [
+        {
+          "calculate": "'No medal gotten this year in ' + datum.properties.NAME",
+          "as": "note"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#ddd",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {"tooltip": {"field": "note"}}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/medal_counts.csv"
+      },
+      "transform": [
+        {
+          "lookup": "Country",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+              "format": {
+                "type": "topojson",
+                "feature": "ne_110m_admin_0_countries"
+              }
+            },
+            "key": "properties.NAME"
+          },
+          "as": "geo"
+        },
+        {"filter": "datum.Year == Year_selection"}
+      ],
+      "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 0.5},
+      "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "Gold", "type": "quantitative"},
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title": "Country"},
+          {"field": "Gold", "type": "quantitative"},
+          {"field": "Year", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "skyblue"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+      },
+      "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+    }
+  ]
 }
