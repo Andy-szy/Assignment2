@@ -6,32 +6,71 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
     <title></title>
-
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 
-<div style="">
-    <div id="scatter_plot"></div>
-    <div id="map"></div>
-    <div id="map2"></div>
-    <div id="stack_bar"></div>
+<div class="container">
+    <div class="card">
+        <div class="card-title">
+            <h1>Participation times VS Medals VS Golds</h1>
+        </div>
+        <div class="card-content">
+            <div class="graph-container">
+                <div id="scatter_plot"></div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-title">
+            <h1>Participation times VS Medals VS Golds</h1>
+        </div>
+        <div class="card-content">
+            <div class="graph-container">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-title">
+            <h1>Participation times VS Medals VS Golds</h1>
+        </div>
+        <div class="card-content">
+            <div class="graph-container">
+                <div id="map2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-title">
+            <h1>Participation times VS Medals VS Golds</h1>
+        </div>
+        <div class="card-content">
+            <div class="graph-container">
+                <div id="stack_bar"></div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
 
 <script type="text/javascript">
-  var spec1 = "js/medals_scatter.vg.json";
-  vegaEmbed('#scatter_plot', spec1).then(function(result) {
+  const spec1 = "js/medals_scatter.vg.json";
+  vegaEmbed('#scatter_plot', spec1).then(function (result) {
   }).catch(console.error);
 
-  var spec2 = "js/host_city.vg.json";
-  vegaEmbed('#map', spec2).then(function(result) {
+  const spec2 = "js/host_city.vg.json";
+  vegaEmbed('#map', spec2).then(function (result) {
   }).catch(console.error);
 
-  var spec3 = "js/medal_map.vg.json";
-  vegaEmbed('#map2', spec3).then(function(result) {
+  const spec3 = "js/medal_map.vg.json";
+  vegaEmbed('#map2', spec3).then(function (result) {
   }).catch(console.error);
 
-  var spec4 = "js/height_weight.vg.json";
-  vegaEmbed('#stack_bar', spec4).then(function(result) {
+  const spec4 = "js/height_weight.vg.json";
+  vegaEmbed('#stack_bar', spec4).then(function (result) {
   }).catch(console.error);
 </script>
 

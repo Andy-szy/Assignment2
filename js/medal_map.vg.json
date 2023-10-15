@@ -1,8 +1,26 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/medal_counts.csv"
+  },
   "width": 800,
   "height": 600,
   "title": "Medals distribution",
+  "config": {
+    "background": "#F8F4EE",
+    "title": {
+      "font": "sans-serif",
+      "fontSize": 25
+    },
+    "legend": {
+      "titleFontSize": 14,
+      "labelFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 14
+    }
+  },
   "params": [
     {
       "name": "Year_selection",
@@ -25,7 +43,7 @@
       },
       "transform": [
         {
-          "calculate": "'No medal gotten this year in ' + datum.properties.NAME",
+          "calculate": "'No medal gotten or the team name does not represent their country this year in ' + datum.properties.NAME",
           "as": "note"
         }
       ],
@@ -38,9 +56,6 @@
       "encoding": {"tooltip": {"field": "note"}}
     },
     {
-      "data": {
-        "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/medal_counts.csv"
-      },
       "transform": [
         {
           "lookup": "Country",
@@ -61,10 +76,17 @@
       "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 0.5},
       "encoding": {
         "shape": {"field": "geo", "type": "geojson"},
-        "color": {"field": "Gold", "type": "quantitative"},
+        "color": {
+          "field": "Total",
+          "type": "quantitative",
+          "scale": {"domain": [1, 500], "scheme": "reds"}
+        },
         "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
+          {"field": "Total", "type": "quantitative"},
           {"field": "Gold", "type": "quantitative"},
+          {"field": "Silver", "type": "quantitative"},
+          {"field": "Bronze", "type": "quantitative"},
           {"field": "Year", "type": "quantitative"}
         ]
       }
@@ -82,6 +104,38 @@
         "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {"value": "China"},
+        "x": {"value": 300},
+        "y": {"value": 200}
+      }
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {"value": "United States"},
+        "x": {"value": 620},
+        "y": {"value": 190}
+      }
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {"value": "Australia"},
+        "x": {"value": 370},
+        "y": {"value": 370}
+      }
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {"value": "Russia"},
+        "x": {"value": 300},
+        "y": {"value": 135}
+      }
     }
   ]
 }
