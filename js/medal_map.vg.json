@@ -23,26 +23,25 @@
               "lookup": "properties.NAME",
               "from": {
                 "data": {
-                  "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/medal_owner.csv"
+                  "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/medal_counts.csv"
                 },
                 "key": "Team",
-                "fields": ["Medal"]
+                "fields": ["Gold"]
               }
             }
           ],
           "mark": {"type": "geoshape"},
           "encoding": {
             "color": {
-              "field": "Medal",
-              "type": "nominal"
+              "field": "Gold",
+              "type": "quantitative"
             },
             "tooltip": [
               {
                 "field": "properties.NAME",
                 "type": "nominal",
                 "title": "Country"
-              },
-              {"field": "Medal", "type": "nominal"}
+              }
             ]
           }
         },
