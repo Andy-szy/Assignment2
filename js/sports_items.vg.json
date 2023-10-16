@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Number of Sports items",
+  "config": {
+    "background": "#F8F4EE",
+    "title": {
+      "font": "sans-serif",
+      "fontSize": 25
+    },
+    "legend": {
+      "titleFontSize": 14,
+      "labelFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 14
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/Sports_items.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal", "axis": {"labelAngle": -45}},
+    "y": {"field": "Sports", "type": "nominal"},
+    "color": {
+      "field": "Number",
+      "type": "quantitative",
+      "scale": {
+        "domain": [0, 2, 4, 8, 12, 16, 20, 30, 35, 40, 45], "range": ["#ffffff", "#FFD6D6", "#FFB2B2", "#FF8B8B", "#FF6666", "#FF4040", "#FF1A1A", "#E50000", "#BF0000", "#990000", "#730000"]
+      },
+      "title": "Event number"
+    },
+    "tooltip": [
+      {"field": "Sports", "type": "nominal"},
+      {"field": "Number", "type": "quantitative", "title": "Event number"},
+      {"field": "Year", "type": "nominal"}
+    ]
+  }
+}

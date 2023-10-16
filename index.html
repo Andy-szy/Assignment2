@@ -51,7 +51,16 @@
             </div>
         </div>
     </div>
-
+    <div class="card">
+        <div class="card-title">
+            <h1>Participation times VS Medals VS Golds</h1>
+        </div>
+        <div class="card-content">
+            <div class="graph-container">
+                <div id="tree"></div>
+            </div>
+        </div>
+    </div>
 
 
 </div>
@@ -71,6 +80,10 @@
 
   const spec4 = "js/height_weight.vg.json";
   vegaEmbed('#stack_bar', spec4).then(function (result) {
+  }).catch(console.error);
+
+  const spec5 = "js/sports_items.vg.json";
+  vegaEmbed('#tree', spec5).then(function (result) {
   }).catch(console.error);
 </script>
 
