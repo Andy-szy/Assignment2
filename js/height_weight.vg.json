@@ -24,56 +24,82 @@
       "width": 400,
       "height": 200,
       "transform": [],
-      "mark": "area",
-      "encoding": {
-        "x": {
-          "field": "Weight",
-          "type": "quantitative",
-          "axis": {"title": "Weight(kg)", "grid": false},
-          "scale": {"type": "linear"}
+      "layer":[
+        {
+          "mark": "area",
+          "encoding": {
+            "x": {
+              "field": "Weight",
+              "type": "quantitative",
+              "axis": {"title": "Weight(kg)", "grid": false},
+              "scale": {"type": "linear"}
+            },
+            "y": {
+              "aggregate": "count",
+              "title": "Number of Medals",
+              "scale": {"type": "linear", "domain": [0, 350]}
+            },
+            "color": {
+              "field": "Medal",
+              "scale": {"range": ["saddlebrown", "gold", "gray"]}
+            },
+            "tooltip": [
+              {"field": "Medal", "type": "nominal"},
+              {"field": "Weight", "type": "quantitative"}
+            ]
+          }
         },
-        "y": {
-          "aggregate": "count",
-          "title": "Number of Medals",
-          "scale": {"type": "linear", "domain": [0, 350]}
-        },
-        "color": {
-          "field": "Medal",
-          "scale": {"range": ["saddlebrown", "gold", "gray"]}
-        },
-        "tooltip": [
-          {"field": "Medal", "type": "nominal"},
-          {"field": "Weight", "type": "quantitative"}
-        ]
-      }
+        {
+          "mark": {"type": "text", "align": "left", "baseline": "bottom", "dx": 5},
+          "encoding": {
+            "x": {"value": 120},
+            "y": {"value": 30},
+            "text": {"value": "70kg has the most medals"},
+            "color": {"value": "black"}
+          }
+        }
+      ]
     },
     {
       "title": "Relationship of number of medals and height",
       "width": 400,
       "height": 200,
       "transform": [],
-      "mark": "area",
-      "encoding": {
-        "x": {
-          "field": "Height",
-          "type": "quantitative",
-          "axis": {"title": "Height(cm)", "grid": false},
-          "scale": {"type": "linear", "domain": [135, 225]}
+      "layer":[
+        {
+          "mark": "area",
+          "encoding": {
+            "x": {
+              "field": "Height",
+              "type": "quantitative",
+              "axis": {"title": "Height(cm)", "grid": false},
+              "scale": {"type": "linear", "domain": [135, 225]}
+            },
+            "y": {
+              "aggregate": "count",
+              "title": "Number of Medals",
+              "scale": {"type": "linear", "domain": [0, 500]}
+            },
+            "color": {
+              "field": "Medal",
+              "scale": {"range": ["saddlebrown", "gold", "gray"]}
+            },
+            "tooltip": [
+              {"field": "Medal", "type": "nominal"},
+              {"field": "Height", "type": "quantitative"}
+            ]
+          }
         },
-        "y": {
-          "aggregate": "count",
-          "title": "Number of Medals",
-          "scale": {"type": "linear", "domain": [0, 500]}
-        },
-        "color": {
-          "field": "Medal",
-          "scale": {"range": ["saddlebrown", "gold", "gray"]}
-        },
-        "tooltip": [
-          {"field": "Medal", "type": "nominal"},
-          {"field": "Height", "type": "quantitative"}
-        ]
-      }
+        {
+          "mark": {"type": "text", "align": "left", "baseline": "bottom", "dx": 5},
+          "encoding": {
+            "x": {"value": 120},
+            "y": {"value": 25},
+            "text": {"value": "180cm has the most medals"},
+            "color": {"value": "black"}
+          }
+        }
+      ]
     }
   ]
 }

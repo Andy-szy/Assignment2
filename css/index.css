@@ -24,7 +24,7 @@ p {
 }
 
 .two_columns_card {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family: sans-serif;
     background-color: #F8F4EE;
     border-radius: 0 0 5px 5px;
@@ -47,7 +47,7 @@ p {
 }
 
 .two_rows_card {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family: sans-serif;
     background-color: #F8F4EE;
     display: inline-block;
@@ -59,6 +59,18 @@ p {
     background-color: darkorange;
     color: #fff;
     padding: 1px;
+}
+
+.title {
+    background-color: darkorange;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.title > h1 {
+    font-size: 100px;
 }
 
 .vega-bind-name {

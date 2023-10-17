@@ -17,6 +17,7 @@
     }
   },
   "width": 400,
+  "height": 500,
   "data": {
     "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/Sports_items.csv",
     "format": {"type": "csv"}
