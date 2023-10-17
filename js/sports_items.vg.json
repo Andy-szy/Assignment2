@@ -5,7 +5,7 @@
     "background": "#F8F4EE",
     "title": {
       "font": "sans-serif",
-      "fontSize": 25
+      "fontSize": 20
     },
     "legend": {
       "titleFontSize": 14,
@@ -16,6 +16,7 @@
       "titleFontSize": 14
     }
   },
+  "width": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/Sports_items.csv",
     "format": {"type": "csv"}

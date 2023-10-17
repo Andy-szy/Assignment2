@@ -6,40 +6,67 @@
     text-align: center;
     padding: 20px;
     border: 1px solid #ccc;
-    background-color: bisque;
+    background-color: #F8F4EE;
     overflow: hidden;
 }
 
-.card {
+p {
+    text-align: left;
+    font-size: 18px;
+    max-width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.under_line {
+    text-decoration: underline;
+}
+
+.two_columns_card {
     margin-bottom: 50px;
-    display: inline-block;
-    width: 90%;
-}
-
-/* 标题样式 */
-.card-title {
     font-family: sans-serif;
-    background-color: darkgoldenrod;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-}
-
-/* 内容样式 */
-.card-content {
     background-color: #F8F4EE;
-    padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 0 0 5px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 两列，每列占一半宽度 */
+    align-items: start; /* 垂直对齐方式设置为顶部对齐 */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.graph-container .vega-bindings select {
+.two_columns_card_title {
+    background-color: darkorange;
+    color: #fff;
+    padding: 1px;
+    grid-column: span 2; /* 让标题跨足两列 */
+}
+
+.two_columns_card > div {
+    padding: 20px; /* 添加内边距，以确保内容与卡片边界有适当距离 */
+}
+
+.two_rows_card {
+    margin-bottom: 50px;
     font-family: sans-serif;
-    font-size: 14px;
+    background-color: #F8F4EE;
+    display: inline-block;
+    padding: 20px; /* 添加内边距，以确保内容与卡片边界有适当距离 */
+    min-width: 1200px;
+}
+
+.two_rows_card_title {
+    background-color: darkorange;
+    color: #fff;
+    padding: 1px;
 }
 
 .vega-bind-name {
     font-family: sans-serif;
     font-size: 14px;
     font-weight: bold;
+}
+
+.map_container {
+    padding-left: 80px;
 }

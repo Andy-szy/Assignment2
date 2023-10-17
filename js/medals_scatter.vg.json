@@ -1,21 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
-  "height": 600,
+  "width": 400,
+  "height": 300,
   "title": "Participation times VS Medals VS Golds",
   "config": {
     "background": "#F8F4EE",
     "title": {
       "font": "sans-serif",
-      "fontSize": 25
-    },
-    "legend": {
-      "titleFontSize": 14,
-      "labelFontSize": 12
-    },
-    "axis": {
-      "labelFontSize": 12,
-      "titleFontSize": 14
+      "fontSize": 20
     }
   },
   "data": {
@@ -102,7 +94,7 @@
           "scale": {
             "type": "threshold",
             "domain": [5, 10, 15, 20, 25],
-            "range": [30, 60, 100, 200, 300]
+            "range": [30, 60, 90, 120, 150]
           }
         },
         "color": {
@@ -145,7 +137,8 @@
         "type": "text",
         "align": "right",
         "baseline": "middle",
-        "dy": 8,
+        "dx": -6,
+        "dy": -5,
         "fontSize": 11.5,
         "fontStyle": "italic"
       },
@@ -154,7 +147,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' ||  datum['Country'] == 'United States'",
+            "test": "datum['Country'] == 'Great Britain' ||  datum['Country'] == 'United States'",
             "value": 1
           },
           "value": 0

@@ -11,65 +11,66 @@
 <body>
 
 <div class="container">
-    <div class="card">
-        <div class="card-title">
-            <h1>Participation times VS Medals VS Golds</h1>
-        </div>
-        <div class="card-content">
-            <div class="graph-container">
-                <div id="scatter_plot"></div>
+    <div class="two_columns_card">
+        <div>
+            <div class="two_columns_card_title">
+                <h2>Participation times VS Medals</h2>
             </div>
+            <br>
+            <p id="participation_times_1"></p>
+            <p id="participation_times_2"></p>
         </div>
+        <div id="scatter_plot"></div>
     </div>
-    <div class="card">
-        <div class="card-title">
-            <h1>Participation times VS Medals VS Golds</h1>
+
+    <div class="two_rows_card">
+        <div class="two_columns_card_title">
+            <h2>Summer Olympics games host city</h2>
         </div>
-        <div class="card-content">
-            <div class="graph-container">
-                <div id="map"></div>
-            </div>
+        <div class="map_container">
+            <div id="map"></div>
         </div>
+        <p id="host_city"></p>
     </div>
-    <div class="card">
-        <div class="card-title">
-            <h1>Participation times VS Medals VS Golds</h1>
+
+    <div class="two_rows_card">
+        <div class="two_rows_card_title">
+            <h2>Medal distributions from 1976-2008</h2>
         </div>
-        <div class="card-content">
-            <div class="graph-container">
-                <div id="map2"></div>
-            </div>
-        </div>
+        <div id="map2"></div>
+        <p id="medal_distribution"></p>
     </div>
-    <div class="card">
-        <div class="card-title">
-            <h1>Participation times VS Medals VS Golds</h1>
-        </div>
-        <div class="card-content">
-            <div class="graph-container">
-                <div id="stack_bar"></div>
+
+    <div class="two_columns_card">
+        <div>
+            <div class="two_columns_card_title">
+                <h2>Relationships about athletes' height and weight</h2>
             </div>
+            <p id="weight"></p>
         </div>
+        <div id="stack_bar"></div>
     </div>
-    <div class="card">
-        <div class="card-title">
-            <h1>Participation times VS Medals VS Golds</h1>
-        </div>
-        <div class="card-content">
-            <div class="graph-container">
-                <div id="tree"></div>
+
+    <div class="two_columns_card">
+        <div>
+            <div class="two_columns_card_title">
+                <h2>Number of sports hold</h2>
             </div>
+            <p id="1">test</p>
+            <p id="2">test</p>
         </div>
+        <div id="tree"></div>
     </div>
-    <div class="card">
-        <div class="card-title">
-            <h1>Participation times VS Medals VS Golds</h1>
-        </div>
-        <div class="card-content">
-            <div class="graph-container">
-                <div id="line_area"></div>
+
+    <div class="two_columns_card">
+        <div>
+            <div class="two_columns_card_title">
+                <h2>Athlete number and their age and sex</h2>
             </div>
+            <p id="3">test</p>
+            <p id="4">test</p>
         </div>
+        <div id="line_area"></div>
     </div>
 
 </div>
@@ -100,6 +101,7 @@
   vegaEmbed('#line_area', spec6).then(function (result) {
   }).catch(console.error);
 </script>
+<script src="js/text.js"></script>
 
 </body>
 </html>

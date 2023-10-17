@@ -8,7 +8,7 @@
     "background": "#F8F4EE",
     "title": {
       "font": "sans-serif",
-      "fontSize": 25
+      "fontSize": 20
     },
     "legend": {
       "titleFontSize": 14,
@@ -91,7 +91,7 @@
           {"field": "Age", "type": "quantitative"}
         ]
       },
-      "width": 500,
+      "width": 400,
       "height": 200
     }
   ]
