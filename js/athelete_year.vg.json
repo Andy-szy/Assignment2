@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Andy-szy/Assignment2/main/data/athlete_events.csv"
+  },
+  "title": "Athlete Number and their Age in each games",
+  "config": {
+    "background": "#F8F4EE",
+    "title": {
+      "font": "sans-serif",
+      "fontSize": 25
+    },
+    "legend": {
+      "titleFontSize": 14,
+      "labelFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 14
+    }
+  },
+  "vconcat": [
+    {
+      "transform": [
+        {
+          "filter": {"param": "age_brush"}
+        },
+        {
+          "aggregate":
+            [{"op": "count", "as": "AthleteCount"}],
+          "groupby": ["Year", "Sex", "Season"]
+        }
+      ],
+      "layer": [
+        {
+
+          "mark": {"type": "line", "point": {"filled": false, "size": 60}},
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "ordinal",
+              "axis": {"title": "Year"}
+            },
+            "y": {
+              "field": "AthleteCount",
+              "type": "quantitative",
+              "axis": {"title": "Number of Athletes"}
+            },
+            "color": {
+              "field": "Sex",
+              "type": "nominal",
+              "title": "Sex",
+              "scale": {"range": ["#FFC0CB", "#87CEEB"]}
+            },
+            "strokeDash": {
+              "field": "Season",
+              "type": "nominal",
+              "title": "Season"
+            },
+            "tooltip": [
+              {"field": "Year", "type": "ordinal"},
+              {
+                "field": "AthleteCount",
+                "type": "quantitative",
+                "title": "Athlete number"
+              },
+              {"field": "Season", "type": "ordinal"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "params": [
+        {
+          "name": "age_brush",
+          "select": {"type": "interval", "encodings": ["x"]}
+        }
+      ],
+      "transform": [{"filter": "datum.Age !== 'NA'"}],
+      "mark": {"type": "area", "interpolate": "monotone"},
+      "encoding": {
+        "x": {"field": "Age", "type": "quantitative", "title": "Age"},
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "title": "Number of athlete"
+        },
+        "color": {"value": "orange"},
+        "tooltip":[
+          {"field": "Age", "type": "quantitative"}
+        ]
+      },
+      "width": 500,
+      "height": 200
+    }
+  ]
+}

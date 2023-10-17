@@ -61,7 +61,16 @@
             </div>
         </div>
     </div>
-
+    <div class="card">
+        <div class="card-title">
+            <h1>Participation times VS Medals VS Golds</h1>
+        </div>
+        <div class="card-content">
+            <div class="graph-container">
+                <div id="line_area"></div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
@@ -84,6 +93,11 @@
 
   const spec5 = "js/sports_items.vg.json";
   vegaEmbed('#tree', spec5).then(function (result) {
+  }).catch(console.error);
+
+
+  const spec6 = "js/athelete_year.vg.json";
+  vegaEmbed('#line_area', spec6).then(function (result) {
   }).catch(console.error);
 </script>
 
